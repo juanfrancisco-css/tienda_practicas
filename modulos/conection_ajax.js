@@ -9,11 +9,11 @@ $(function(){
 
         console.log("Datos introducidos : "+ email + pass);
 
-        if(VAL_EMAIL(email) && VAL_PASS(pass)){
+        if(VAL_EMAIL(email.trim()) && VAL_PASS(pass.trim())){
 
-
+           
             console.log("DATOS CORRECTOS");
-            pass= calcMD5(pass);
+            pass= calcMD5(pass.trim());
             console.log(" password " + pass);
             var ruta ='EMAIL='+email+'&PASS='+pass;
             $.ajax({
@@ -27,10 +27,16 @@ $(function(){
             console.log('lo que me envia el servidor');
            
             if(res=="0"){
-
+               let resp =  confirm("El usuario introducido no esta registrado \n ¿Deseas  registrate ?")
+             if(resp){
+                location.assign('formulario-registro.html');
+             }
+//alert("El email introducido no esra registrado");
                 console.log("No existe");
+                ColorInputInvalidos();
             }else{
                 console.log(res);
+                ColorInputValidos();
                 location.assign("tienda.html")
             }
            
@@ -48,9 +54,8 @@ $(function(){
             })
         }
         else{
-
-
             console.log("DATOS INCORRECTOS");
+            ColorInputInvalidos();
         }
     })
 

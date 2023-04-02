@@ -1,4 +1,5 @@
 <?php
+session_start();
 header("Access-Control-Allow-Origin: *");
 include('conexion.php');
 $connect = new Conexion ('localhost','root','','wallapop');
