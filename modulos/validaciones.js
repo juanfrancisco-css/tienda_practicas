@@ -28,3 +28,40 @@ function VAL_PASS(pass){
         return true;
     }
 }
+function VAL_PASS_R(pass,r_pass){
+
+    if(VAL_PASS(pass)){
+
+        if(pass == r_pass ){
+
+            console.log('Coincide');
+            return true;
+
+        }
+        else{
+            console.log('no coincide');
+            return false;
+        }
+      
+
+    }
+    else{
+
+        return false;
+    }
+}
+
+function VAL_NOM(nom){
+    // let pass = document.getElementById('pass').value
+     console.log(nom);
+     if(!(/^[A-Za-z ]{3,30}$/.test(nom))){
+     console.log("nombre invalido");
+       
+     return false;
+     }
+     else{
+         console.log("nombre valido");
+       
+         return true;
+     }
+ }

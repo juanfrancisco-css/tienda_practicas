@@ -9,13 +9,13 @@ $(function(){
 
         console.log("Datos introducidos : "+ email + pass);
 
-        if(VAL_EMAIL(email) && VAL_PASS(pass)){
+        if(VAL_EMAIL(email.trim()) && VAL_PASS(pass.trim())){
 
 
             console.log("DATOS CORRECTOS");
-            pass= calcMD5(pass);
+            pass= calcMD5(pass.trim());
             console.log(" password " + pass);
-            var ruta ='EMAIL='+email+'&PASS='+pass;
+            var ruta ='EMAIL='+email.trim()+'&PASS='+pass.trim();
             $.ajax({
                     type:"post",
                     url:"servidor.php",
