@@ -8,15 +8,23 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/custom.css">
     <script src="modulos/conection_ajax.js"></script>
+    <script src="modulos/validaciones.js"></script>
+    <script src="modulos/md5.js"></script> 
 </head>
 <body>
     
     <h1>Formulario de iniciar sesión</h1>
 <form id="form-sesion">
-    <div class="form-group">
+    <div class="form-group  mx-sm-3">
         <label for="email">Introduce email</label>
         <input type="email" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Escribe tu email">
-      </div>
+    </div>
+    <div class="form-group mx-sm-3">    
+        <label for="pass">Introduce password</label>
+        <input type="password" class="form-control" id="pass"  aria-describedby="passHelp" placeholder="Escribe tu password">
+    </div>
+    <button type="button" class="btn btn-primary" id="btn-submit">Entrar</button>
+    <a href="formulario-registro.html">Crear una cuenta</a>
 </form>
 </body>
 </html>

@@ -1,0 +1,19 @@
+
+#form-sesion{
+    text-align: center;
+    float:center;
+    background-color: bisque;
+    width: 40%;
+    padding: 3%;
+    display:block;
+    text-align: left;
+}
+#form-sesion button{
+    width:50%;
+    text-align: center;
+   margin-top: 3%;
+
+}
+#form-sesion a{
+    display: block;
+}
