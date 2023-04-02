@@ -17,3 +17,15 @@
 #form-sesion a{
     display: block;
 }
+
+#form-suscribete {
+    width: 40%;
+    padding: 3%;
+    display:block;
+}
+#form-suscribete label{
+   font-weight: bolder;
+}
+#form-suscribete input{
+    margin-bottom: 3%;
+}
