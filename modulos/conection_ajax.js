@@ -31,7 +31,8 @@ $(function(){
                 console.log("No existe");
             }else{
                 console.log(res);
-                location.assign("tienda.html")
+               // location.assign("tienda.html")
+               location.replace("tienda.html");
             }
            
           

@@ -39,7 +39,8 @@ $(function(){
               
             }else{
                 console.log(res);
-                location.assign("tienda.html")
+               // location.assign("tienda.html") solo hará que se cargue un nuevo documento.
+                location.replace("tienda.html");
             }
            
           
