@@ -1,2 +1,2 @@
 # tienda_practicas
-proyecto de praticas , solo he añadido el login para iniciar sesion 
+Formulario de iniciar sesion y de registro con sus campos de validaciones ademas con sus respectivas conexiones con la base de datos
