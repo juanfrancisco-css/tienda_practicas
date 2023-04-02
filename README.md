@@ -1,2 +1,2 @@
 # tienda_practicas
-proyecto de praticas , solo he añadido el login para iniciar sesion 
+he añadido los formularios de alta y de login con sus validaciones y su respectiva conexion con la bbdd
